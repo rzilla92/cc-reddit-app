@@ -44,10 +44,10 @@ export const fetchPosts = () => async (dispatch) => {
     try {
         dispatch(startGetPosts())
         const posts = await getMemePosts()
-        dispatch(getPostsSuccess(postsWithMetadata))
+        dispatch(getPostsSuccess(posts))
     } catch (error) {
-        dispatch(getPostsFailed)
+        dispatch(getPostsFailed())
     }
 }
 
-export const selectPosts = (state) => state.api.posts
+export const selectPosts = (state) => state.reddit.posts

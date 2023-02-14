@@ -1,0 +1,26 @@
+header {
+    display: block;
+    padding: 0.25rem;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #272727;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon {
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    color: #fff;
+}
+
+.logo-text {
+    color:#fff;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaReddit } from 'react-icons/fa';
+import './Header.css'
 
 const Header = () => {
     return (

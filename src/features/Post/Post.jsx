@@ -1,16 +1,17 @@
 import React from 'react'
 import Card from '../../components/card'
 
-export const Post = () => {
+export const Post = (props) => {
+    const {post} = props
   return (
-    <article key=''>
+    <article key={post.id}>
         <Card>
             <div className='post-wrap'>
                 <div className='post-container'>
-                    <h3 className='post-title'>title replace me</h3>
-                    <h4 className='post-author'>author replace me</h4>
+                    <h3 className='post-title'>{post.title}</h3>
+                    <h4 className='post-author'>posted by {post.author}</h4>
                     <div className='post-img-container'>
-                        <img src='' alt='' className='post-image' />
+                        <img src={post.url} alt='' className='post-image' />
                     </div>
                 </div>
                 

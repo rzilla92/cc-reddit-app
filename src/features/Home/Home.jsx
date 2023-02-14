@@ -8,7 +8,7 @@ import './Home.css'
 const Home = () => {
     const reddit = useSelector((state) => state.reddit)
     const { isLoading, error } = reddit
-    const posts = useSelector((state)=> state.reddit.posts)
+    const posts = useSelector(selectPosts)
     const dispatch = useDispatch()
 
     useEffect(() => {
